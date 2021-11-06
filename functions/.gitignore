@@ -7,3 +7,12 @@ typings/
 
 # Node.js dependency directory
 node_modules/
+
+config/
+
+# Ignore Local Emulators
+/database-debug.log
+/firebase-debug.log
+/firestore-debug.log
+/pubsub-debug.log
+/ui-debug.log
