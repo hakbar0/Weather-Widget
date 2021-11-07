@@ -9,8 +9,9 @@ export const dummyData = () => {
         return {
             name: faker.name.firstName(),
             company: faker.company.companyName(),
+            date:  faker.date.soon().toISOString(),
+            dateString: faker.date.soon(5).toDateString(),
             location: cities[Math.floor(Math.random() * cities.length)],
-            schedule: faker.date.between("2021-11-06", "2021-11-17"),
         };
     });
 };
